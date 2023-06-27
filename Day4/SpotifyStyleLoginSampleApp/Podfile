@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SpotifyStyleLoginSampleApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SpotifyStyleLoginSampleApp
+
+pod 'Firebase/Auth', '8.6.0'
+pod 'Firebase/Firestore', '8.6.0'
+pod 'GoogleSignIn', '5.0.2'
+
+target 'SpotifyStyleLoginSampleAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SpotifyStyleLoginSampleAppUITests' do
+    # Pods for testing
+  end
+
+end
