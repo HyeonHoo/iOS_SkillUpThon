@@ -1,72 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fqI-7p-xFc">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qHG-jG-z8z">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="qUG-5k-wwB">
-            <objects>
-                <navigationController id="fqI-7p-xFc" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Gt-H4-JKy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wsa-yb-4ag"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TzL-BN-ob9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1014" y="131"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScreenTransitionExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrenTrain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-eO-SFf">
-                                <rect key="frame" x="160" y="352" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sugue로 Push"/>
-                                <connections>
-                                    <segue destination="TX4-4o-ZQP" kind="show" id="kyk-Sd-UP2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LK-Kz-9TD">
-                                <rect key="frame" x="151" y="407" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sugue로 Present"/>
-                                <connections>
-                                    <segue destination="sca-bm-wcr" kind="presentation" modalPresentationStyle="fullScreen" id="Pai-Pm-pvb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9Y-dr-ZmE">
-                                <rect key="frame" x="169" y="460" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="코드로 Push"/>
-                                <connections>
-                                    <action selector="tapCodePushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V21-OO-w7A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leN-Zg-8hN">
-                                <rect key="frame" x="160" y="507" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="코드로 Present"/>
-                                <connections>
-                                    <action selector="tapCodePresentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uL7-CS-JdE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah5-QR-4BV">
-                                <rect key="frame" x="187" y="567" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="LCI-d1-Raf">
+                                <rect key="frame" x="100" y="228.00000000000003" width="193" height="289.66666666666674"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-gf-Bqc">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="36.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sugue push"/>
+                                        <connections>
+                                            <segue destination="qJ1-8B-89f" kind="show" id="aYS-Ip-3nI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVi-Gj-KWW">
+                                        <rect key="frame" x="0.0" y="86.666666666666686" width="193" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sugue Present"/>
+                                        <connections>
+                                            <segue destination="i0P-CU-ibk" kind="presentation" modalPresentationStyle="fullScreen" id="MIi-dX-VJk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="137-gi-H0A">
+                                        <rect key="frame" x="0.0" y="171" width="193" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="코드로 Push"/>
+                                        <connections>
+                                            <action selector="tapCodePushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHf-vQ-JJW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOC-fZ-kbk">
+                                        <rect key="frame" x="0.0" y="255.33333333333334" width="193" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="코드로 Present"/>
+                                        <connections>
+                                            <action selector="tapCodePresent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BI0-CM-bgZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-kZ-wRG">
+                                <rect key="frame" x="150" y="617.66666666666663" width="93" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,174 +62,245 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LCI-d1-Raf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="J70-nm-k6h"/>
+                            <constraint firstItem="lgc-kZ-wRG" firstAttribute="top" secondItem="LCI-d1-Raf" secondAttribute="bottom" constant="100" id="LmT-xh-DiU"/>
+                            <constraint firstItem="LCI-d1-Raf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="WD1-Oa-Eyp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lgc-kZ-wRG" secondAttribute="bottom" constant="180" id="ghn-HZ-16q"/>
+                            <constraint firstItem="lgc-kZ-wRG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="k1X-c6-6mc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lgc-kZ-wRG" secondAttribute="trailing" constant="150" id="kCL-qS-tSu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LCI-d1-Raf" secondAttribute="trailing" constant="100" id="pc3-FM-Kad"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qve-it-qOd"/>
+                    <navigationItem key="navigationItem" id="Nnl-dW-nlk"/>
                     <connections>
-                        <outlet property="nameLabel" destination="ah5-QR-4BV" id="rM7-KB-YtY"/>
+                        <outlet property="nameLabel" destination="lgc-kZ-wRG" id="jug-2Y-Gov"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="131"/>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+        <!--Sugue Push View Controller-->
+        <scene sceneID="5Jy-P7-HyY">
+            <objects>
+                <viewController id="qJ1-8B-89f" customClass="SuguePushViewController" customModule="ScrenTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULc-1e-KBv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-OK-IR9">
+                                <rect key="frame" x="150" y="617.66666666666663" width="93" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="arH-QA-AvU">
+                                <rect key="frame" x="120" y="303" width="153" height="214.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugue 로 Push" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-Ik-ftB">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hst-SK-Bnl">
+                                        <rect key="frame" x="0.0" y="100.33333333333331" width="153" height="114.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="qJ1-8B-89f" eventType="touchUpInside" id="8Pc-VP-Hck"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DfO-nx-2Ph"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DfO-nx-2Ph" firstAttribute="trailing" secondItem="arH-QA-AvU" secondAttribute="trailing" constant="120" id="9QC-0c-7Df"/>
+                            <constraint firstItem="JfA-OK-IR9" firstAttribute="leading" secondItem="DfO-nx-2Ph" secondAttribute="leading" constant="150" id="DFj-iB-L2Z"/>
+                            <constraint firstItem="arH-QA-AvU" firstAttribute="leading" secondItem="DfO-nx-2Ph" secondAttribute="leading" constant="120" id="S2O-r9-V2z"/>
+                            <constraint firstItem="JfA-OK-IR9" firstAttribute="top" secondItem="arH-QA-AvU" secondAttribute="bottom" constant="100" id="UNg-Gm-Ysi"/>
+                            <constraint firstItem="DfO-nx-2Ph" firstAttribute="bottom" secondItem="JfA-OK-IR9" secondAttribute="bottom" constant="180" id="hyE-ty-vFP"/>
+                            <constraint firstItem="arH-QA-AvU" firstAttribute="top" secondItem="DfO-nx-2Ph" secondAttribute="top" constant="200" id="mJD-bK-NqC"/>
+                            <constraint firstItem="DfO-nx-2Ph" firstAttribute="trailing" secondItem="JfA-OK-IR9" secondAttribute="trailing" constant="150" id="oFL-x0-ScX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3me-tk-j8P"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="JfA-OK-IR9" id="aU1-bA-qFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSv-MT-Hzc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="4"/>
         </scene>
         <!--Code Push View Controller-->
-        <scene sceneID="5mG-5Y-CW2">
+        <scene sceneID="mSK-YL-Imn">
             <objects>
-                <viewController storyboardIdentifier="CodePushViewController" id="5YY-VW-gxj" customClass="CodePushViewController" customModule="ScreenTransitionExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="egZ-Ls-JhM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="CodePushViewController" id="CPo-UJ-WBq" customClass="CodePushViewController" customModule="ScrenTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOa-OR-65W">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrN-JK-3aH">
-                                <rect key="frame" x="165" y="433" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back Button"/>
-                                <connections>
-                                    <action selector="tapBackButton:" destination="5YY-VW-gxj" eventType="touchUpInside" id="bia-7V-khF"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코드로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvR-Mt-IfE">
-                                <rect key="frame" x="132" y="363" width="150" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-bU-dfP">
-                                <rect key="frame" x="186" y="534" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="f5z-Ag-iG3">
+                                <rect key="frame" x="120" y="259" width="153" height="258.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Push" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcd-qH-IOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-lV-SQN">
+                                        <rect key="frame" x="0.0" y="100.33333333333333" width="153" height="158.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="CPo-UJ-WBq" eventType="touchUpInside" id="Ozg-q6-2Td"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-aI-bKP">
+                                <rect key="frame" x="150" y="617.66666666666663" width="93" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="AtE-9Z-2zL"/>
+                        <viewLayoutGuide key="safeArea" id="rZD-AA-mkQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rZD-AA-mkQ" firstAttribute="trailing" secondItem="uoS-aI-bKP" secondAttribute="trailing" constant="150" id="CVl-M2-xS7"/>
+                            <constraint firstItem="f5z-Ag-iG3" firstAttribute="leading" secondItem="rZD-AA-mkQ" secondAttribute="leading" constant="120" id="D3Z-nl-ghD"/>
+                            <constraint firstItem="uoS-aI-bKP" firstAttribute="top" secondItem="f5z-Ag-iG3" secondAttribute="bottom" constant="100" id="E6t-oy-xQO"/>
+                            <constraint firstItem="f5z-Ag-iG3" firstAttribute="top" secondItem="rZD-AA-mkQ" secondAttribute="top" constant="200" id="NH0-DD-e3S"/>
+                            <constraint firstItem="rZD-AA-mkQ" firstAttribute="trailing" secondItem="f5z-Ag-iG3" secondAttribute="trailing" constant="120" id="XOr-EX-lKr"/>
+                            <constraint firstItem="rZD-AA-mkQ" firstAttribute="bottom" secondItem="uoS-aI-bKP" secondAttribute="bottom" constant="180" id="c01-iL-PaW"/>
+                            <constraint firstItem="uoS-aI-bKP" firstAttribute="leading" secondItem="rZD-AA-mkQ" secondAttribute="leading" constant="150" id="fDo-Sb-jGk"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="CBM-bU-dfP" id="Fk2-k8-nps"/>
+                        <outlet property="nameLabel" destination="uoS-aI-bKP" id="tJn-iQ-vPs"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5NF-lD-Y0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7N1-JR-dtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1014" y="862"/>
-        </scene>
-        <!--Segue Present View Controller-->
-        <scene sceneID="oi8-6b-04L">
-            <objects>
-                <viewController id="sca-bm-wcr" customClass="SeguePresentViewController" customModule="ScreenTransitionExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zZI-nA-sfH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbb-Ss-TEU">
-                                <rect key="frame" x="165" y="502" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back Button"/>
-                                <connections>
-                                    <action selector="tapBackButton:" destination="sca-bm-wcr" eventType="touchUpInside" id="FDo-Sz-jQC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugue로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xC-B2-d2y">
-                                <rect key="frame" x="100" y="430" width="214" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="iSn-85-VoA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ubs-j1-G6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="838" y="862"/>
-        </scene>
-        <!--Segue Push View Controller-->
-        <scene sceneID="BeL-n5-Lzk">
-            <objects>
-                <viewController id="TX4-4o-ZQP" customClass="SeguePushViewController" customModule="ScreenTransitionExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="liJ-dQ-Lrm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIw-vB-akB">
-                                <rect key="frame" x="165" y="488" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back Button"/>
-                                <connections>
-                                    <action selector="tapBackButton:" destination="TX4-4o-ZQP" eventType="touchUpInside" id="oH9-jd-eeU"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugue로 Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSi-Zp-xT2">
-                                <rect key="frame" x="117" y="430" width="181" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-9C-Dle">
-                                <rect key="frame" x="176" y="557" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Jzz-NM-efb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ViB-rQ-oFm"/>
-                    <connections>
-                        <outlet property="nameLabel" destination="hkt-9C-Dle" id="Whs-f9-cXE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="emm-FK-8kk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="837.68115942028987" y="130.58035714285714"/>
+            <point key="canvasLocation" x="-738" y="729"/>
         </scene>
         <!--Code Present View Controller-->
-        <scene sceneID="La5-Hg-JUP">
+        <scene sceneID="7xV-bq-Qfs">
             <objects>
-                <viewController storyboardIdentifier="CodePresentViewController" id="R2G-Oe-A1b" customClass="CodePresentViewController" customModule="ScreenTransitionExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i4V-oP-ing">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="CodePresentViewController" id="Qdx-MB-VYr" customClass="CodePresentViewController" customModule="ScrenTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UJe-dD-rhd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코드로 Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXD-Qk-GAa">
-                                <rect key="frame" x="113" y="359" width="183" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ein-aF-gMS">
-                                <rect key="frame" x="162" y="433" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back Button"/>
-                                <connections>
-                                    <action selector="tapBackButton:" destination="R2G-Oe-A1b" eventType="touchUpInside" id="1fe-Oa-XNA"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t3-qn-j2K">
-                                <rect key="frame" x="186" y="544" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="YKh-UH-fXB">
+                                <rect key="frame" x="120" y="259" width="153" height="258.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORt-eu-WYY">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fci-DZ-bCH">
+                                        <rect key="frame" x="0.0" y="100.33333333333333" width="153" height="158.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="Qdx-MB-VYr" eventType="touchUpInside" id="ddX-k2-QeR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9a-9d-KfZ">
+                                <rect key="frame" x="150" y="617.66666666666663" width="93" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="gb8-CZ-PsZ"/>
+                        <viewLayoutGuide key="safeArea" id="vJv-xh-fnY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vJv-xh-fnY" firstAttribute="bottom" secondItem="m9a-9d-KfZ" secondAttribute="bottom" constant="180" id="2ru-uF-QJF"/>
+                            <constraint firstItem="vJv-xh-fnY" firstAttribute="trailing" secondItem="YKh-UH-fXB" secondAttribute="trailing" constant="120" id="33R-jW-XoE"/>
+                            <constraint firstItem="vJv-xh-fnY" firstAttribute="trailing" secondItem="m9a-9d-KfZ" secondAttribute="trailing" constant="150" id="a1l-A7-aZ0"/>
+                            <constraint firstItem="m9a-9d-KfZ" firstAttribute="leading" secondItem="vJv-xh-fnY" secondAttribute="leading" constant="150" id="eQS-N2-2gP"/>
+                            <constraint firstItem="YKh-UH-fXB" firstAttribute="top" secondItem="vJv-xh-fnY" secondAttribute="top" constant="200" id="ksU-TO-dXZ"/>
+                            <constraint firstItem="m9a-9d-KfZ" firstAttribute="top" secondItem="YKh-UH-fXB" secondAttribute="bottom" constant="100" id="mYZ-eM-Vf6"/>
+                            <constraint firstItem="YKh-UH-fXB" firstAttribute="leading" secondItem="vJv-xh-fnY" secondAttribute="leading" constant="120" id="zgY-vp-igg"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="4t3-qn-j2K" id="S3r-3R-D31"/>
+                        <outlet property="nameLabel" destination="m9a-9d-KfZ" id="8AJ-gh-1Eh"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RiJ-hY-sei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLW-qf-vjw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75" y="862"/>
+            <point key="canvasLocation" x="73" y="729"/>
+        </scene>
+        <!--Sugue Present View Controller-->
+        <scene sceneID="eFo-2H-zty">
+            <objects>
+                <viewController id="i0P-CU-ibk" customClass="SuguePresentViewController" customModule="ScrenTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Gw-M0-QDS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-uF-VxG">
+                                <rect key="frame" x="120" y="250" width="153" height="252"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugue 로 present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0G-JE-u29">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBD-vZ-qi9">
+                                        <rect key="frame" x="0.0" y="100.3333333333333" width="153" height="151.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="i0P-CU-ibk" eventType="touchUpInside" id="y0B-VV-84X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ieT-oC-UXf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qDq-uF-VxG" firstAttribute="top" secondItem="ieT-oC-UXf" secondAttribute="top" constant="250" id="3kg-Gw-Ojw"/>
+                            <constraint firstItem="ieT-oC-UXf" firstAttribute="trailing" secondItem="qDq-uF-VxG" secondAttribute="trailing" constant="120" id="6JQ-gt-aXn"/>
+                            <constraint firstItem="ieT-oC-UXf" firstAttribute="bottom" secondItem="qDq-uF-VxG" secondAttribute="bottom" constant="350" id="mgb-wS-Gnk"/>
+                            <constraint firstItem="qDq-uF-VxG" firstAttribute="leading" secondItem="ieT-oC-UXf" secondAttribute="leading" constant="120" id="nBt-Lk-Trc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oc7-hO-cOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="739"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZdN-HM-Kws">
+            <objects>
+                <navigationController id="qHG-jG-z8z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dax-Fw-ctE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qaz-10-Bm9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwC-47-efP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-753" y="4"/>
         </scene>
     </scenes>
     <resources>

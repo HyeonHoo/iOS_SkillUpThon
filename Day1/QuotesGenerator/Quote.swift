@@ -2,7 +2,7 @@
 //  Quote.swift
 //  QuotesGenerator
 //
-//  Created by Gunter on 2021/08/14.
+//  Created by HyeonHo on 2023/06/29.
 //
 
 import Foundation
