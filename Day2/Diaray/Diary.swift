@@ -1,8 +1,8 @@
 //
 //  Diary.swift
-//  Diary
+//  Diaray
 //
-//  Created by Gunter on 2021/09/11.
+//  Created by 신현호 on 2023/06/21.
 //
 
 import Foundation
