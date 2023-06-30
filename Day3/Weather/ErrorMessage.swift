@@ -2,7 +2,7 @@
 //  ErrorMessage.swift
 //  Weather
 //
-//  Created by Gunter on 2021/09/17.
+//  Created by HyeonHo on 2023/06/30.
 //
 
 import Foundation
